@@ -8,7 +8,7 @@ return {
     vim.opt.termguicolors = true
     require("bufferline").setup({
       options = {
-        separator_style = "slant",
+        -- separator_style = "slant", -- or try slope
         diagnostics = "nvim_lsp",
         modified_icon = "+",
         diagnostics_update_on_event = true, -- use nvim's diagnostic handler

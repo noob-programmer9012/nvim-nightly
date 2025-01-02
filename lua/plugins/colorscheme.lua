@@ -41,9 +41,9 @@ return {
     }
 
     require("nightfox").setup({
-      -- options = {
-      --   transparent = true,
-      -- },
+      options = {
+        transparent = true,
+      },
       palettes = palettes,
       specs = specs,
     })

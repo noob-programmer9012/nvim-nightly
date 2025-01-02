@@ -77,7 +77,7 @@ return {
               removed = { fg = "#cc241d" },
             },
             symbols = { added = "+", modified = "~", removed = "-" }, -- Changes the symbols used by the diff.
-            source = nil,                                       -- A function that works as a data source for diff.
+            source = nil,                                             -- A function that works as a data source for diff.
             color = { bg = colors.color_aqua },
             separator = { right = "" },
             draw_empty = true,
@@ -94,7 +94,7 @@ return {
           },
           {
             " ",
-            color = { bg = colors.color_bg3 },
+            color = { bg = colors.color_bg1 },
             separator = { right = "" },
             draw_empty = true,
           },
