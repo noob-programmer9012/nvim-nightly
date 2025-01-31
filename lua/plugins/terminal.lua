@@ -13,12 +13,17 @@ return {
       hidden = true,
       direction = "tab",
     })
+    local lazydocker = Terminal:new({ cmd = "lazydocker", hidden = true, direction = "tab" })
     -- local ollama = Terminal:new({ cmd = "ollama run llama3.2", hidden = true, direction = "tab" })
     -- local ollamastart = Terminal:new({ cmd = "sudo systemctl start ollama", hidden = true, direction = "tab" })
     -- local ollamastop = Terminal:new({ cmd = "sudo systemctl stop ollama", hidden = true, direction = "tab" })
 
     function Lazygit_toggle()
       lazygit:toggle()
+    end
+
+    function Lazydocker_toggle()
+      lazydocker:toggle()
     end
 
     function Btop_toggle()
@@ -57,6 +62,7 @@ return {
     })
 
     vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua Lazygit_toggle()<CR>", { noremap = true, silent = true })
+    vim.api.nvim_set_keymap("n", "<leader>gd", "<cmd>lua Lazydocker_toggle()<CR>", { noremap = true, silent = true })
     vim.api.nvim_set_keymap("n", "<leader>gb", "<cmd>lua Btop_toggle()<CR>", { noremap = true, silent = true })
     vim.api.nvim_set_keymap("n", "<leader>gm", "<cmd>lua Mongosh_toggle()<CR>", { noremap = true, silent = true })
     vim.api.nvim_set_keymap(
