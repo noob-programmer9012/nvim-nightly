@@ -8,7 +8,6 @@ return {
     local palettes = {
       carbonfox = {
         bg1 = "#161616",
-        -- -- bg0 = "#161616",
         bg0 = "#1a1a1a",
         --
         -- sel is different types of selection colors.
@@ -42,7 +41,7 @@ return {
 
     require("nightfox").setup({
       options = {
-        transparent = true,
+        transparent = false,
       },
       palettes = palettes,
       specs = specs,

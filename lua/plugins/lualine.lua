@@ -20,7 +20,7 @@ return {
         a = { fg = colors.color_fg0, bg = colors.color_orange },
         b = { fg = colors.color_fg0, bg = colors.color_yellow },
         -- c = { fg = colors.color_fg0, bg = colors.color_bg1 },
-        c = { fg = colors.color_fg0, bg = "#161616" },
+        c = { fg = colors.color_fg0, bg = "#1a1a1a" },
       },
 
       insert = { a = { fg = colors.color_bg1, bg = colors.color_orange } },
