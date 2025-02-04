@@ -3,27 +3,33 @@
 ## Before installing anything
 1. Run following commands from terminal
 ```
-sudo apt update && sudo apt install gcc c++ ripgrep make fd-find git python3-venv curl
+sudo apt update && sudo apt install gcc c++ ripgrep make fd-find git python3-venv python3-pip curl cmake cmake-gui
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install --lts
+sudo apt install kitty zsh
+sudo chsh -s $(which zsh)
 ```
 
 ## Requirements
 
-After extracting lua-5.1 tar file copy the contents of src file to the folder which luarocks is looking for.
+After extracting lua-5.1 tar file copy the contents of src folder to the /usr/include/lua5.1/ (if lua5.1 folder doesnt exist create one.)
 
 1. [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
    1. install clang, g++, gcc
    2. install [clangd](https://clangd.llvm.org/installation)
 2. [Nerd font](https://www.nerdfonts.com)
+    after installing any nerd font mv all .ttf files into /usr/local/share/fonts/
+    to rebuild the font cache type "fc-cache -f -v" into terminal.
 3. [Luarocs](https://luarocks.org)
 4. [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
-5. [git](https://git-scm.com/downloads/linux)
-6. [Emmet](https://github.com/olrtg/emmet-language-server)
-7. [Ollama with Llama3.2](https://ollama.com)
-8. [Mongodb](https://www.mongodb.com/docs/mongodb-shell/install)
-9. [Btop](https://github.com/aristocratos/btop)
-10. [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
-11. [CPPtools](https://github.com/microsoft/vscode-cpptools/releases)
+5. [lazydocker](https://github.com/jesseduffield/lazydocker)
+6. [git](https://git-scm.com/downloads/linux)
+7. [Emmet](https://github.com/olrtg/emmet-language-server)
+8. [Ollama with Llama3.2](https://ollama.com)
+9. [Mongodb](https://www.mongodb.com/docs/mongodb-shell/install)
+10. [Btop](https://github.com/aristocratos/btop)
+11. [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+12. [CPPtools](https://github.com/microsoft/vscode-cpptools/releases)
     1. Download the .vsix file and extract it.
     2. replace dap.adapters.cppdbg.command = "/Path to CPPtools folder/extension/debugAdapters/bin/OpenDebugAD7" in debugger.lua file
 

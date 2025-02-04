@@ -29,7 +29,7 @@ return {
       dap.adapters.cppdbg = {
         id = "cppdbg",
         type = "executable",
-        command = "/home/blackburn/Downloads/CPPTools/extension/debugAdapters/bin/OpenDebugAD7",
+        command = "/home/parth-patel/Downloads/CPPTools/extension/debugAdapters/bin/OpenDebugAD7",
       }
 
       dap.configurations.cpp = {
