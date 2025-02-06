@@ -20,7 +20,7 @@ return {
         a = { fg = colors.color_fg0, bg = colors.color_orange },
         b = { fg = colors.color_fg0, bg = colors.color_yellow },
         -- c = { fg = colors.color_fg0, bg = colors.color_bg1 },
-        c = { fg = colors.color_fg0, bg = "#1a1a1a" },
+        c = { fg = colors.color_fg0, bg = "#161616" }, -- make sure to keep kitty captpuccin theme bg color is set to #161616
       },
 
       insert = { a = { fg = colors.color_bg1, bg = colors.color_orange } },
