@@ -9,6 +9,22 @@ nvm install --lts
 sudo apt install kitty zsh
 sudo chsh -s $(which zsh)
 ```
+2. [Yazi File Manager](https://yazi-rs.github.io/docs/installation) 
+Setup the latest stable Rust toolchain via rustup:
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup update
+```
+Clone the repository and build Yazi:
+```
+git clone https://github.com/sxyazi/yazi.git
+cd yazi
+cargo build --release --locked
+```
+Then, add yazi and ya to your $PATH:
+```
+mv target/release/yazi target/release/ya /usr/local/bin/
+```
 
 ## Requirements
 

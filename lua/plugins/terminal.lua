@@ -5,6 +5,7 @@ return {
   config = function()
     local Terminal = require("toggleterm.terminal").Terminal
     local lazygit = Terminal:new({ cmd = "lazygit", hidden = true, direction = "tab" })
+    local yazi = Terminal:new({ cmd = "yazi", hidden = true, direction = "tab" })
     local btop = Terminal:new({ cmd = "btop", hidden = true, direction = "tab" })
     local mongosh = Terminal:new({ cmd = "mongosh", hidden = true, direction = "tab" })
     local mongoshCloud = Terminal:new({
@@ -20,6 +21,10 @@ return {
 
     function Lazygit_toggle()
       lazygit:toggle()
+    end
+
+    function Yazi_toggle()
+      yazi:toggle()
     end
 
     function Lazydocker_toggle()
@@ -62,6 +67,7 @@ return {
     })
 
     vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua Lazygit_toggle()<CR>", { noremap = true, silent = true })
+    vim.api.nvim_set_keymap("n", "<leader>gy", "<cmd>lua Yazi_toggle()<CR>", { noremap = true, silent = true })
     vim.api.nvim_set_keymap("n", "<leader>gd", "<cmd>lua Lazydocker_toggle()<CR>", { noremap = true, silent = true })
     vim.api.nvim_set_keymap("n", "<leader>gb", "<cmd>lua Btop_toggle()<CR>", { noremap = true, silent = true })
     vim.api.nvim_set_keymap("n", "<leader>gm", "<cmd>lua Mongosh_toggle()<CR>", { noremap = true, silent = true })
