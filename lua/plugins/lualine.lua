@@ -94,12 +94,19 @@ return {
           },
           {
             " ",
-            color = { bg = colors.color_bg1 },
+            color = { bg = colors.color_bg3 },
             separator = { right = "" },
             draw_empty = true,
           },
         },
-        lualine_c = { "filename" },
+        lualine_c = {
+          {
+            "filename",
+            color = { bg = colors.color_bg1 },
+            separator = { right = "" },
+            draw_empty = true,
+          }
+        },
         lualine_x = {
           {
             activeClients,

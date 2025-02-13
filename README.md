@@ -6,6 +6,7 @@
 sudo apt update && sudo apt install gcc c++ ripgrep make fd-find git python3-venv python3-pip curl cmake cmake-gui
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm install --lts
+npm install -g typescript typescript-language-server
 sudo apt install kitty zsh
 sudo chsh -s $(which zsh)
 ```
